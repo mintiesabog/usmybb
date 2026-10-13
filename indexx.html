@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff4f4" />
+  <title>Our First Month 💌</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">A little love note for you</span>
+        <h1>Happy one month,<span>my baby</span></h1>
+        <p class="intro">One whole month of us—and somehow you already feel like my favorite place to be.</p>
+        <button class="hero-heart" type="button" aria-label="Send a heart" onclick="sendHearts()">♥</button>
+        <button class="button surprise-button" type="button" onclick="openLoveSurprise(this)" aria-expanded="false" aria-controls="love-note">
+          <span class="gift-box" aria-hidden="true">
+            <span class="gift-lid"></span>
+            <span class="gift-base"><span class="gift-ribbon"></span></span>
+            <span class="gift-bow">♡</span>
+          </span>
+          <span class="surprise-label">Open your little surprise</span>
+        </button>
+      </div>
+    </header>
+
+    <section id="letter">
+      <div class="section-inner">
+        <h2 class="section-title">A note from my heart</h2>
+        <p class="section-subtitle">For the sweetest person in my world.</p>
+        <div class="letter-wrap">
+          <article class="letter is-sealed" id="love-note" aria-hidden="true" inert>
+            <p>My love,</p>
+            <p>Happy one month to us! It may be just the beginning, but this month has already given me so many little moments to smile about. Thank you for being you—for your sweetness, your laughs, and the way you make ordinary days feel special.</p>
+            <p>I hope we keep making memories, cheering each other on, and finding new reasons to choose one another. I feel so lucky that this is our story, and I can't wait for all the chapters still to come.</p>
+            <p class="signoff">All my love, always ♡</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <div class="section-inner">
+        <h2 class="section-title">Little things I adore</h2>
+        <p class="section-subtitle">Three tiny reminders of why you make my heart so happy.</p>
+        <div class="cards">
+          <article class="card"><span class="icon">☀️</span><h3>Your smile</h3><p>It makes even my cloudy days feel brighter.</p></article>
+          <article class="card"><span class="icon">🫶</span><h3>Your kind heart</h3><p>You make the people around you feel so loved.</p></article>
+          <article class="card"><span class="icon">✨</span><h3>Being us</h3><p>My favorite thing is simply getting to share life with you.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending">
+      <div class="section-inner">
+        <h2 class="section-title">Here's to us</h2>
+        <p>One month down, and so many sweet little adventures ahead. Tap below for one more reminder, just because you deserve it.</p>
+        <button class="button" type="button" onclick="showSurprise()">A tiny surprise 💌</button>
+        <p class="surprise" id="surprise" aria-live="polite"></p>
+        <p><a class="button" href="page2.html">One more thing for you →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with lots of love, just for you ♡</footer>
+
+</body>
+</html>
