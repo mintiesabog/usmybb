@@ -1,0 +1,6 @@
+.voice-page { min-height: 100vh; display: grid; grid-template-rows: auto 1fr; padding: 24px; }
+.voice-back { display: grid; width: 44px; height: 44px; place-items: center; border: 1px solid #f1cbd5; border-radius: 50%; background: #ffffffbf; color: var(--deep-pink); font-size: 1.5rem; text-decoration: none; }
+.voice-back:hover { background: white; }
+.audio-player-wrap { display: grid; place-items: center; width: min(100%, 620px); margin: auto; }
+.voice-player { width: 100%; }
+@media (max-width: 600px) { .voice-page { padding: 16px; } }

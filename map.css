@@ -1,0 +1,45 @@
+.map-page { min-height: 100vh; padding: 28px 20px 40px; }
+.map-back { display: inline-block; color: var(--deep-pink); font-weight: 700; text-decoration: none; }
+.map-back:hover { text-decoration: underline; }
+.map-intro { width: min(100%, 760px); margin: 32px auto 28px; text-align: center; }
+.map-intro h1 { font-size: clamp(1.8rem, 4.5vw, 2.6rem); }
+.map-intro h1 { margin: 20px 0 12px; }
+.map-intro h1 span { margin-top: 12px; font-size: .52em; }
+.map-intro p { margin: 0 auto; max-width: 620px; font-size: 1.1rem; line-height: 1.7; }
+.map-card { width: min(100%, 1000px); margin: 0 auto; padding: clamp(14px, 3vw, 26px); border: 1px solid #f1d9dd; border-radius: 30px; background: #fffdf2e8; box-shadow: 0 20px 60px #90606f12; text-align: center; }
+.travel-map { width: 100%; height: clamp(330px, 52vw, 520px); overflow: hidden; border: 1px solid #d7e7e2; border-radius: 24px; background: #e8f5f1; }
+.leaflet-container { font: 14px "Trebuchet MS", "Segoe UI", sans-serif; }
+.leaflet-control-attribution { font-size: 10px !important; }
+.city-marker, .plane-marker { border: 0; background: transparent; }
+.marker-heart { display: block; color: #d84970; font-size: 31px; line-height: 36px; text-align: center; filter: drop-shadow(0 2px 4px #53243e70); animation: pin-pulse 1.8s ease-in-out infinite; }
+.bulakan-marker .marker-heart { color: #b94aa2; animation-delay: .6s; }
+.plane-disc { display: grid; width: 44px; height: 44px; place-items: center; border: 3px solid white; border-radius: 50%; background: #d84970; box-shadow: 0 3px 14px #54213970; }
+.plane-disc svg { width: 26px; height: 26px; fill: white; transform-origin: center; }
+.map-tooltip { border: 1px solid #f0c7d1 !important; border-radius: 12px !important; color: #754653 !important; font-weight: 700; box-shadow: 0 5px 14px #563b4620 !important; }
+.map-key { display: flex; align-items: center; justify-content: center; gap: clamp(10px, 3vw, 28px); flex-wrap: wrap; margin: 15px auto 0; color: #754653; font-size: .95rem; font-weight: 700; }
+.map-key > span { display: inline-flex; align-items: center; gap: 7px; }
+.key-dot { width: 12px; height: 12px; border-radius: 50%; background: #d84970; box-shadow: 0 0 0 4px #d8497025; }
+.bulakan-dot { background: #b94aa2; box-shadow: 0 0 0 4px #b94aa225; }
+.key-route { color: #d84970; font-size: 1.4rem; }
+.distance-badge { display: flex; flex-direction: column; gap: 7px; width: fit-content; max-width: 100%; margin: 24px auto 0; padding: 17px 28px; border: 1px solid #f0cbd4; border-radius: 22px; background: linear-gradient(135deg, #fff2f5, #fffaf2); }
+.distance-caption { color: #926674; font-size: .95rem; }
+.distance-badge strong { color: #c8456a; font: 600 clamp(2rem, 5vw, 3rem) Georgia, "Times New Roman", serif; }
+.distance-badge strong { font-size: clamp(1.45rem, 3.5vw, 2rem); }
+.replay-flight { margin-top: 17px; }
+.replay-flight:disabled { cursor: progress; opacity: .72; }
+.map-next { display: flex; justify-content: center; margin: 22px auto 0; }
+.map-next .button { width: min(100%, 340px); text-align: center; }
+.map-note { max-width: 700px; margin: 20px auto 12px; line-height: 1.75; }
+.map-link { display: inline-block; padding: 10px 16px; border-radius: 999px; color: #bd5476; font-weight: 700; text-decoration: none; }
+.map-link:hover { background: #fff0f4; }
+.map-footer { margin-top: 24px; color: #956e7c; text-align: center; font: italic 1rem Georgia, serif; }
+@keyframes pin-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.16); } }
+@media (max-width: 640px) {
+  .map-page { padding: 18px 14px 30px; }
+  .map-intro { margin-top: 26px; }
+  .travel-map { height: 390px; }
+  .map-card { border-radius: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marker-heart { animation: none; }
+}
